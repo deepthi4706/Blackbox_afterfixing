@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Time Tales</title>
+ <style>
+ body {
+ background-color: #f5f5dc;
+ font-family: 'Georgia', serif;
+ color: #333; /* Improved contrast */
+ }
+
+ header {
+ background-color: #696969;
+ color: white;
+ padding: 10px;
+ text-align: center;
+ }
+
+ nav {
+ text-align: center;
+ }
+
+ nav a {
+ color: white;
+ text-decoration: none;
+ padding: 5px;
+ }
+
+ nav a:hover {
+ background-color: #3f3f3f;
+ }
+
+ main {
+ display: flex;
+ flex-wrap: wrap;
+ }
+
+ .story {
+ width: 30%;
+ margin: 1%;
+ background-color: white;
+ padding: 10px;
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+ }
+
+ .story img {
+ width: 100%;
+ }
+
+ footer {
+ background-color: #696969;
+ color: white;
+ text-align: center;
+ padding: 10px;
+ }
+
+ .sr-only {
+ position: absolute;
+ left: -10000px;
+ top: auto;
+ width: 1px;
+ height: 1px;
+ overflow: hidden;
+ }
+
+ .visually-hidden {
+ clip: rect(0 0 0 0);
+ clip-path: inset(50%);
+ height: 1px;
+ margin: -1px;
+ overflow: hidden;
+ padding: 0;
+ position: absolute;
+ white-space: nowrap;
+ width: 1px;
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <h1>Time Tales</h1>
+ </header>
+ <nav>
+ <a href="#">Home</a>
+ <a href="#">Historical Fiction Stories</a>
+ <a href="#">Time Travel Adventures</a>
+ <a href="#">Historical Mysteries</a>
+ <a href="#">Author Interviews</a>
+ </nav>
+ <main>
+ <div class="story">
+ <img src="story1.jpg" alt="Story 1">
+ <h2>Story 1</h2>
+ <p class="visually-hidden">Story 1 description:</p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ligula vitae nisi tincidunt dapibus.</p>
+ <button type="button" class="sr-only">Read More</button>
+ </div>
+ <!-- Add more story elements here -->
+ </main>
+ <footer>
+ <p>&copy; 2023 Time Tales. All rights reserved.</p>
+ </footer>
+</body>
+</html>
